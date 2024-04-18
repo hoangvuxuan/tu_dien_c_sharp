@@ -30,12 +30,12 @@
         {
             panel1 = new Panel();
             button1 = new Button();
-            comboBox1 = new ComboBox();
+            cb_word = new ComboBox();
             panel2 = new Panel();
             button3 = new Button();
             button2 = new Button();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            tb_explain = new TextBox();
+            tb_mean = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -43,7 +43,7 @@
             // panel1
             // 
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(cb_word);
             panel1.Location = new Point(6, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(249, 481);
@@ -59,21 +59,22 @@
             button1.TabIndex = 1;
             button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cb_word
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.Simple;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(17, 8);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(153, 472);
-            comboBox1.TabIndex = 0;
+            cb_word.DropDownStyle = ComboBoxStyle.Simple;
+            cb_word.FormattingEnabled = true;
+            cb_word.Location = new Point(17, 8);
+            cb_word.Name = "cb_word";
+            cb_word.Size = new Size(153, 472);
+            cb_word.TabIndex = 0;
+            cb_word.SelectedIndexChanged += cb_word_SelectedIndexChanged;
             // 
             // panel2
             // 
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(tb_explain);
+            panel2.Controls.Add(tb_mean);
             panel2.Location = new Point(261, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(726, 482);
@@ -99,21 +100,21 @@
             button2.TabIndex = 2;
             button2.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // tb_explain
             // 
-            textBox2.Location = new Point(3, 79);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(632, 400);
-            textBox2.TabIndex = 1;
+            tb_explain.Location = new Point(3, 79);
+            tb_explain.Multiline = true;
+            tb_explain.Name = "tb_explain";
+            tb_explain.Size = new Size(632, 400);
+            tb_explain.TabIndex = 1;
             // 
-            // textBox1
+            // tb_mean
             // 
-            textBox1.Location = new Point(3, 8);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(632, 65);
-            textBox1.TabIndex = 0;
+            tb_mean.Location = new Point(3, 8);
+            tb_mean.Multiline = true;
+            tb_mean.Name = "tb_mean";
+            tb_mean.Size = new Size(632, 65);
+            tb_mean.TabIndex = 0;
             // 
             // Form1
             // 
@@ -134,10 +135,10 @@
         #endregion
 
         private Panel panel1;
-        private ComboBox comboBox1;
+        private ComboBox cb_word;
         private Panel panel2;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox tb_explain;
+        private TextBox tb_mean;
         private Button button1;
         private Button button3;
         private Button button2;
