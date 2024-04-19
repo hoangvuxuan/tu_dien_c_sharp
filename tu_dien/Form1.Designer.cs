@@ -58,6 +58,7 @@
             button1.Size = new Size(70, 470);
             button1.TabIndex = 1;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // cb_word
             // 
@@ -89,6 +90,7 @@
             button3.Size = new Size(82, 400);
             button3.TabIndex = 3;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -99,6 +101,7 @@
             button2.Size = new Size(82, 65);
             button2.TabIndex = 2;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // tb_explain
             // 
